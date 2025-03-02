@@ -16,10 +16,10 @@ spec:
         app: my-first-deploy
     spec:
       containers:
-        - image: httpd
+        - image: httpd:bookworm
           name: httpd
   strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 1
-      maxSurge: 1
+    type: Recreate
+    # rollingUpdate:
+    #   maxUnavailable: 1
+    #   maxSurge: 1
