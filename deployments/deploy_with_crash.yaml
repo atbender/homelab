@@ -16,12 +16,12 @@ spec:
         app: my-first-deploy
     spec:
       containers:
-        - image: httpd:bookworm
+        - image: httpd:alpine3.18
           name: httpd
-          # command: ["/bin/bash", "-c"]  # overrides the defaut command
-          # args: ["sleep 5; exit 1"]     # exit with error after 5 seconds
+          command: ["/bin/bash", "-c"]  # overrides the defaut command
+          args: ["sleep 5; exit 1"]     # exit with error after 5 seconds
   strategy:
-    type: RollingUpdate                 # Recreate is also available
+    type: RollingUpdate
     rollingUpdate:
       maxUnavailable: 1
       maxSurge: 1

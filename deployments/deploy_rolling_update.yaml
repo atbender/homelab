@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: my-first-deploy
+  name: my-first-deploy
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: my-first-deploy
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: my-first-deploy
+    spec:
+      containers:
+        - image: httpd:bookworm
+          name: httpd
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
