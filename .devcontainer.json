@@ -1,5 +1,5 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
     "features": {
         "ghcr.io/duduribeiro/devcontainer-features/neovim:1": {}
     },
@@ -11,6 +11,9 @@
                 "path": "/usr/bin/zsh"
             }
         }
-    }
+    },
+    "forwardPorts": [
+        8080
+    ]
 }
 
