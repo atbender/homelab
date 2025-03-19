@@ -32,7 +32,7 @@ spec:
 
           envFrom:
             - secreRef:
-              name: linkding-secret
+                name: linkding-secret
 
       volumes:
         - name: linkding-data
