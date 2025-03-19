@@ -1,4 +1,4 @@
-# Sandcastle Homelab
+# Homelab
 
 This repository contains the infrastructure-as-code for my personal Kubernetes homelab. It uses GitOps principles with Flux CD to manage deployments and configurations across my home infrastructure.
 
