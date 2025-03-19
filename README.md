@@ -40,7 +40,7 @@ A self-hosted bookmark manager running in Kubernetes with:
 - Persistent storage for bookmark data
 - Encrypted secrets for credentials
 - Cloudflare tunnel for secure external access without opening ports
-- Accessible via https://ldhl.xandilabs.uk
+- Accessible via my personal domain
 
 ## Getting Started
 
