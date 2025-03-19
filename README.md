@@ -73,7 +73,7 @@ cat age.agekey | kubectl create secret generic sops-age \
 ```bash
 flux bootstrap github \
   --owner=your-github-username \
-  --repository=sandcastle \
+  --repository=homelab \
   --branch=main \
   --path=./clusters/staging \
   --personal
