@@ -31,8 +31,8 @@ spec:
                 name: linkding-data
 
           envFrom:
-            - secreRef:
-                name: linkding-credentials
+          - secreRef:
+              name: linkding-credentials
 
       volumes:
         - name: linkding-data
