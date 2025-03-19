@@ -30,6 +30,10 @@ spec:
               - mountPath: /etc/linkding/data
                 name: linkding-data
 
+          envFrom:
+            - secreRef:
+              name: linkding-secret
+
       volumes:
         - name: linkding-data
           persistentVolumeClaim:
