@@ -3,6 +3,4 @@ kind: Kustomization
 
 namespace: blog
 resources:
-  - ../../base/blog/namespace.yaml
-  - ../../base/blog/deployment.yaml
-  - ../../base/blog/service.yaml 
+  - ../../base/blog/ 

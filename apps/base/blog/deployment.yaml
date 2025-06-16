@@ -16,4 +16,11 @@ spec:
       - name: blog
         image: ghcr.io/atbender/blog:sha-9f1a78f
         ports:
-        - containerPort: 1313 
+        - containerPort: 1313
+        env:
+        - name: HUGO_WATCH
+          value: "true"
+        - name: HUGO_BIND
+          value: "0.0.0.0"
+        - name: HUGO_PORT
+          value: "1313" 
