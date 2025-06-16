@@ -3,4 +3,5 @@ kind: Kustomization
 
 namespace: blog
 resources:
-  - ../../base/blog/ 
+  - ../../base/blog/
+  - cloudflare.yaml 
