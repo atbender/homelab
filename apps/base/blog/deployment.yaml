@@ -15,14 +15,5 @@ spec:
       containers:
       - name: blog
         image: ghcr.io/atbender/blog:sha-9f1a78f
-        command: ["hugo"]
-        args: ["server", "--bind", "0.0.0.0", "--disableFastRender", "--noHTTPCache"]
         ports:
-        - containerPort: 1313
-        env:
-        - name: HUGO_WATCH
-          value: "true"
-        - name: HUGO_BIND
-          value: "0.0.0.0"
-        - name: HUGO_PORT
-          value: "1313" 
+        - containerPort: 80 
