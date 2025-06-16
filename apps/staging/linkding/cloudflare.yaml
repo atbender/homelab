@@ -79,6 +79,8 @@ data:
     ingress:
     - hostname: ldhl.xandilabs.uk
       service: http://linkding:9090
+    # Using fully qualified service name (FQDN) to access service across namespaces
+    # Format: <service>.<namespace>.svc.cluster.local
     - hostname: blog.xandilabs.uk
-      service: http://blog:80
+      service: http://blog.blog.svc.cluster.local:80
     - service: http_status:404
