@@ -79,8 +79,7 @@ data:
     ingress:
     - hostname: ldhl.xandilabs.uk
       service: http://linkding:9090
-    # Using namespace-prefixed service name for cross-namespace access
-    # Format: http://<service>.<namespace>:<port>
+    # Using direct ClusterIP to avoid any DNS resolution issues
     - hostname: blog.xandilabs.uk
-      service: http://blog.blog:80
+      service: http://10.43.123.38:80
     - service: http_status:404
