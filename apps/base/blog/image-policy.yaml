@@ -6,5 +6,7 @@ spec:
   imageRepositoryRef:
     name: blog
   policy:
-    regex:
-      pattern: '^sha-[a-f0-9]+$' 
+    alphabetical:
+      order: desc
+    filterTags:
+      pattern: '^latest$'
