@@ -4,6 +4,7 @@ metadata:
   name: blog
   annotations:
     image.fluxcd.io/automated: "true"
+    image.fluxcd.io/tag: latest
 spec:
   replicas: 3
   selector:
@@ -13,10 +14,9 @@ spec:
     metadata:
       labels:
         app: blog
-        voo: bor
     spec:
       containers:
       - name: blog
-        image: ghcr.io/atbender/blog:sha-d27c14f # {"$imagepolicy": "blog:blog"}
+        image: ghcr.io/atbender/blog:latest
         ports:
         - containerPort: 80 
