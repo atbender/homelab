@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         app: blog
+        voo: bor
     spec:
       containers:
       - name: blog

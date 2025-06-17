@@ -6,7 +6,8 @@ spec:
   imageRepositoryRef:
     name: blog
   policy:
-    alphabetical:
-      order: desc
-    filterTags:
-      pattern: '^latest$'
+    semver:
+      range: '>=0.0.0'
+      filterTags:
+        pattern: '^sha-[a-f0-9]+$'
+        extract: '$0'
