@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: blog
+  annotations:
+    image.fluxcd.io/automated: "true"
 spec:
   replicas: 3
   selector:
@@ -14,6 +16,6 @@ spec:
     spec:
       containers:
       - name: blog
-        image: ghcr.io/atbender/blog:sha-d27c14f
+        image: ghcr.io/atbender/blog:sha-d27c14f # {"$imagepolicy": "blog:blog"}
         ports:
         - containerPort: 80 
