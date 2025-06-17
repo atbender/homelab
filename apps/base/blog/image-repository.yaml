@@ -4,5 +4,4 @@ metadata:
   name: blog
 spec:
   interval: 1m
-  image: ghcr.io/atbender/blog
-  tagFilter: '^latest$' 
+  image: ghcr.io/atbender/blog 
