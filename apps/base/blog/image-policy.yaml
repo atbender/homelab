@@ -6,5 +6,7 @@ spec:
   imageRepositoryRef:
     name: blog
   policy:
-    semver:
-      range: 'latest'
+    alphabetical:
+      order: asc
+      filterTags:
+        pattern: '^latest$'
