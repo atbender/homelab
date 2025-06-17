@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: blog
-        image: ghcr.io/atbender/blog:sha-9f1a78f
+        image: ghcr.io/atbender/blog:sha-d27c14f
         ports:
         - containerPort: 80 
