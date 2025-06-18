@@ -82,7 +82,7 @@ data:
       service: http://linkding:9090
     # Using direct ClusterIP to avoid any DNS resolution issues
     - hostname: blog.xandilabs.uk
-      service: http://10.43.123.38:80
+      service: http://10.43.25.143:80
     # Catch-all rule to debug traffic
     - hostname: "*.xandilabs.uk"
       service: http_status:200
