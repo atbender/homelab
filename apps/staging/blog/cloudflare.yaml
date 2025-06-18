@@ -14,5 +14,5 @@ data:
 
     ingress:
     - hostname: blog.xandilabs.uk
-      service: http://blog.blog:80
+      service: http://blog.blog.svc.cluster.local:80
     - service: http_status:404 
