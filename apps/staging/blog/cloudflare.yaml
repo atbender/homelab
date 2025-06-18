@@ -14,5 +14,5 @@ data:
 
     ingress:
     - hostname: blog.xandilabs.uk
-      service: http://10.43.123.38:80
+      service: http://blog.blog:80
     - service: http_status:404 
