@@ -79,8 +79,8 @@ data:
 
     ingress:
     - hostname: ldhl.xandilabs.uk
-      service: http://linkding:9090
-    # Using direct ClusterIP to avoid any DNS resolution issues
+      service: http://linkding.linkding.svc.cluster.local:9090
+    # Using static IP for blog service
     - hostname: blog.xandilabs.uk
       service: http://10.43.25.143:80
     # Catch-all rule to debug traffic
